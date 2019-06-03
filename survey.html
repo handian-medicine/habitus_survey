@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>体质调查问卷</title>
+  <link rel='stylesheet prefetch' href='https://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='css/animate.min.css'>
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel='stylesheet'
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,100,400,300,600,700,800'>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/input_radio.css">
+
+</head>
+
+<body>
+  <div class="covering">
+    <div class="progress">
+      <div class="progress-bar" style="width: 0;"> <span class="sr-only">60% Complete</span> </div>
+    </div>
+    <!-- <header class="htmleaf-header">
+			<h1 class="h1-header animated bounceInLeft">中医体质分类与判定表</h1>
+		</header> -->
+    <div class="container-fluid table-class">
+      <div class="black">
+        <div class="inner cover">
+          <div class="centerUp">
+            <div class="questionaire">
+              <form id="question-form" action="" method="POST">
+                <ul class="progress-form">
+                  <li class="form-group animated fadeInRightBig  activate" data-color="#E1523D" data-percentage="10%">
+                    <h2>平和型（A型）</h2>
+                    <p>
+                      请根据近一年的体验和感觉，回答以下问题
+                    </p>
+                    <div>
+                      <h4>（1）您精力充沛吗？</h4>
+                      <div class="inputGroup">
+                        <input id="pinghe-question1-1" name="pinghe-question1" type="radio" value="1" />
+                        <label for="pinghe-question1-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question1-2" name="pinghe-question1" type="radio" value="2" />
+                        <label for="pinghe-question1-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question1-3" name="pinghe-question1" type="radio" value="3" />
+                        <label for="pinghe-question1-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question1-4" name="pinghe-question1" type="radio" value="4" />
+                        <label for="pinghe-question1-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question1-5" name="pinghe-question1" type="radio" value="5" />
+                        <label for="pinghe-question1-5">总是（非常）</label>
+                      </div>
+                      <h4>（2）您容易疲乏吗？*</h4>
+                      <div class="inputGroup">
+                        <input id="pinghe-question2-1" name="pinghe-question2" type="radio" value="5" />
+                        <label for="pinghe-question2-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question2-2" name="pinghe-question2" type="radio" value="4" />
+                        <label for="pinghe-question2-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question2-3" name="pinghe-question2" type="radio" value="3" />
+                        <label for="pinghe-question2-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question2-4" name="pinghe-question2" type="radio" value="2" />
+                        <label for="pinghe-question2-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question2-5" name="pinghe-question2" type="radio" value="1" />
+                        <label for="pinghe-question2-5">总是（非常）</label>
+                      </div>
+                      <h4>（3）您说话声音低弱无力吗？*</h4>
+                      <div class="inputGroup">
+                        <input id="pinghe-question3-1" name="pinghe-question3" type="radio" value="5" />
+                        <label for="pinghe-question3-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question3-2" name="pinghe-question3" type="radio" value="4" />
+                        <label for="pinghe-question3-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question3-3" name="pinghe-question3" type="radio" value="3" />
+                        <label for="pinghe-question3-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question3-4" name="pinghe-question3" type="radio" value="2" />
+                        <label for="pinghe-question3-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question3-5" name="pinghe-question3" type="radio" value="1" />
+                        <label for="pinghe-question3-5">总是（非常）</label>
+                      </div>
+                      <h4>（4）您感到闷闷不乐，情绪低沉吗？*</h4>
+                      <div class="inputGroup">
+                        <input id="pinghe-question4-1" name="pinghe-question4" type="radio" value="5" />
+                        <label for="pinghe-question4-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question4-2" name="pinghe-question4" type="radio" value="4" />
+                        <label for="pinghe-question4-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question4-3" name="pinghe-question4" type="radio" value="3" />
+                        <label for="pinghe-question4-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question4-4" name="pinghe-question4" type="radio" value="2" />
+                        <label for="pinghe-question4-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question4-5" name="pinghe-question4" type="radio" value="1" />
+                        <label for="pinghe-question4-5">总是（非常）</label>
+                      </div>
+                      <h4>（5）您比一般人耐受不了寒冷（冬天的寒冷，夏天的空调，电扇等）吗？*</h4>
+                      <div class="inputGroup">
+                        <input id="pinghe-question5-1" name="pinghe-question5" type="radio" value="5" />
+                        <label for="pinghe-question5-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question5-2" name="pinghe-question5" type="radio" value="4" />
+                        <label for="pinghe-question5-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question5-3" name="pinghe-question5" type="radio" value="3" />
+                        <label for="pinghe-question5-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question5-4" name="pinghe-question5" type="radio" value="2" />
+                        <label for="pinghe-question5-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question5-5" name="pinghe-question5" type="radio" value="1" />
+                        <label for="pinghe-question5-5">总是（非常）</label>
+                      </div>
+                      <h4>（6）您能适应外界自然和社会环境的变化吗？</h4>
+                      <div class="inputGroup">
+                        <input id="pinghe-question6-1" name="pinghe-question6" type="radio" value="1" />
+                        <label for="pinghe-question6-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question6-2" name="pinghe-question6" type="radio" value="2" />
+                        <label for="pinghe-question6-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question6-3" name="pinghe-question6" type="radio" value="3" />
+                        <label for="pinghe-question6-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question6-4" name="pinghe-question6" type="radio" value="4" />
+                        <label for="pinghe-question6-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question6-5" name="pinghe-question6" type="radio" value="5" />
+                        <label for="pinghe-question6-5">总是（非常）</label>
+                      </div>
+                      <h4>（7）您容易失眠吗？*</h4>
+                      <div class="inputGroup">
+                        <input id="pinghe-question7-1" name="pinghe-question7" type="radio" value="5" />
+                        <label for="pinghe-question7-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question7-2" name="pinghe-question7" type="radio" value="4" />
+                        <label for="pinghe-question7-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question7-3" name="pinghe-question7" type="radio" value="3" />
+                        <label for="pinghe-question7-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question7-4" name="pinghe-question7" type="radio" value="2" />
+                        <label for="pinghe-question7-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question7-5" name="pinghe-question7" type="radio" value="1" />
+                        <label for="pinghe-question7-5">总是（非常）</label>
+                      </div>
+                      <h4>（8）您容易忘事（健忘）吗？*</h4>
+                      <div class="inputGroup">
+                        <input id="pinghe-question8-1" name="pinghe-question8" type="radio" value="5" />
+                        <label for="pinghe-question8-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question8-2" name="pinghe-question8" type="radio" value="4" />
+                        <label for="pinghe-question8-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question8-3" name="pinghe-question8" type="radio" value="3" />
+                        <label for="pinghe-question8-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question8-4" name="pinghe-question8" type="radio" value="2" />
+                        <label for="pinghe-question8-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="pinghe-question8-5" name="pinghe-question8" type="radio" value="1" />
+                        <label for="pinghe-question8-5">总是（非常）</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="img_cnt"></span> / <span class="img_amt"></span>
+                    <button class="btn btn-default btn-lg nxt" id="pinghe-btn" type="button"> Next <span
+                        class="icon-next"></span></button>
+                  </li>
+                  <li class="form-group animated hide inactive" data-color="#7C6992" data-percentage="20%">
+                    <h2>气虚质（B型）</h2>
+                    <p>
+                      请根据近一年的体验和感觉，回答以下问题
+                    </p>
+                    <div>
+                      <h4>（1）您容易疲乏吗？</h4>
+                      <div class="inputGroup">
+                        <input id="qixu-question1-1" name="qixu-question1" type="radio" value="1" />
+                        <label for="qixu-question1-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question1-2" name="qixu-question1" type="radio" value="2" />
+                        <label for="qixu-question1-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question1-3" name="qixu-question1" type="radio" value="3" />
+                        <label for="qixu-question1-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question1-4" name="qixu-question1" type="radio" value="4" />
+                        <label for="qixu-question1-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question1-5" name="qixu-question1" type="radio" value="5" />
+                        <label for="qixu-question1-5">总是（非常）</label>
+                      </div>
+                      <h4>（2）您容易气短(呼吸短促，接不上气)吗？</h4>
+                      <div class="inputGroup">
+                        <input id="qixu-question2-1" name="qixu-question2" type="radio" value="1" />
+                        <label for="qixu-question2-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question2-2" name="qixu-question2" type="radio" value="2" />
+                        <label for="qixu-question2-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question2-3" name="qixu-question2" type="radio" value="3" />
+                        <label for="qixu-question2-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question2-4" name="qixu-question2" type="radio" value="4" />
+                        <label for="qixu-question2-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question2-5" name="qixu-question2" type="radio" value="5" />
+                        <label for="qixu-question2-5">总是（非常）</label>
+                      </div>
+                      <h4>（3）您容易心慌吗？</h4>
+                      <div class="inputGroup">
+                        <input id="qixu-question3-1" name="qixu-question3" type="radio" value="1" />
+                        <label for="qixu-question3-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question3-2" name="qixu-question3" type="radio" value="2" />
+                        <label for="qixu-question3-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question3-3" name="qixu-question3" type="radio" value="3" />
+                        <label for="qixu-question3-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question3-4" name="qixu-question3" type="radio" value="4" />
+                        <label for="qixu-question3-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question3-5" name="qixu-question3" type="radio" value="5" />
+                        <label for="qixu-question3-5">总是（非常）</label>
+                      </div>
+                      <h4>（4）您容易头晕或站起时晕眩吗？</h4>
+                      <div class="inputGroup">
+                        <input id="qixu-question4-1" name="qixu-question4" type="radio" value="1" />
+                        <label for="qixu-question4-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question4-2" name="qixu-question4" type="radio" value="2" />
+                        <label for="qixu-question4-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question4-3" name="qixu-question4" type="radio" value="3" />
+                        <label for="qixu-question4-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question4-4" name="qixu-question4" type="radio" value="4" />
+                        <label for="qixu-question4-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question4-5" name="qixu-question4" type="radio" value="5" />
+                        <label for="qixu-question4-5">总是（非常）</label>
+                      </div>
+                      <h4>（5）您比别人容易患感冒吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qixu-question5-1" name="qixu-question5" type="radio" value="1" />
+                        <label for="qixu-question5-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question5-2" name="qixu-question5" type="radio" value="2" />
+                        <label for="qixu-question5-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question5-3" name="qixu-question5" type="radio" value="3" />
+                        <label for="qixu-question5-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question5-4" name="qixu-question5" type="radio" value="4" />
+                        <label for="qixu-question5-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question5-5" name="qixu-question5" type="radio" value="5" />
+                        <label for="qixu-question5-5">总是（非常）</label>
+                      </div>
+                      <h4>（6）您喜欢安静、懒得说话吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qixu-question6-1" name="qixu-question6" type="radio" value="1" />
+                        <label for="qixu-question6-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question6-2" name="qixu-question6" type="radio" value="2" />
+                        <label for="qixu-question6-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question6-3" name="qixu-question6" type="radio" value="3" />
+                        <label for="qixu-question6-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question6-4" name="qixu-question6" type="radio" value="4" />
+                        <label for="qixu-question6-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question6-5" name="qixu-question6" type="radio" value="5" />
+                        <label for="qixu-question6-5">总是（非常）</label>
+                      </div>
+                      <h4>（7）您说话声音低弱无力吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qixu-question7-1" name="qixu-question7" type="radio" value="1" />
+                        <label for="qixu-question7-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question7-2" name="qixu-question7" type="radio" value="2" />
+                        <label for="qixu-question7-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question7-3" name="qixu-question7" type="radio" value="3" />
+                        <label for="qixu-question7-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question7-4" name="qixu-question7" type="radio" value="4" />
+                        <label for="qixu-question7-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question7-5" name="qixu-question7" type="radio" value="5" />
+                        <label for="qixu-question7-5">总是（非常）</label>
+                      </div>
+                      <h4>（8）您活动量稍大就容易出虚汗吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qixu-question8-1" name="qixu-question8" type="radio" value="1" />
+                        <label for="qixu-question8-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question8-2" name="qixu-question8" type="radio" value="2" />
+                        <label for="qixu-question8-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question8-3" name="qixu-question8" type="radio" value="3" />
+                        <label for="qixu-question8-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question8-4" name="qixu-question8" type="radio" value="4" />
+                        <label for="qixu-question8-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qixu-question8-5" name="qixu-question8" type="radio" value="5" />
+                        <label for="qixu-question8-5">总是（非常）</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="img_cnt"></span> / <span class="img_amt"></span>
+                    <button class="btn btn-default btn-lg nxt" id="qixu-btn" type="button">Next <span
+                        class="icon-next"></span></button>
+                  </li>
+                  <li class="form-group animated hide" data-color="#00AF66" data-percentage="30%">
+                    <h2>阳虚质（C型）</h2>
+                    <p>
+                      请根据近一年的体验和感觉，回答以下问题
+                    </p>
+                    <div>
+                      <h4>（1）您手脚发凉吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yangxu-question1-1" name="yangxu-question1" type="radio" value="1" />
+                        <label for="yangxu-question1-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question1-2" name="yangxu-question1" type="radio" value="2" />
+                        <label for="yangxu-question1-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question1-3" name="yangxu-question1" type="radio" value="3" />
+                        <label for="yangxu-question1-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question1-4" name="yangxu-question1" type="radio" value="4" />
+                        <label for="yangxu-question1-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question1-5" name="yangxu-question1" type="radio" value="5" />
+                        <label for="yangxu-question1-5">总是（非常）</label>
+                      </div>
+                      <h4>（2）您胃脘部、背部或腰膝部怕冷吗？</h4>
+                      <div class="inputGroup">
+                        <input id="yangxu-question2-1" name="yangxu-question2" type="radio" value="1" />
+                        <label for="yangxu-question2-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question2-2" name="yangxu-question2" type="radio" value="2" />
+                        <label for="yangxu-question2-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question2-3" name="yangxu-question2" type="radio" value="3" />
+                        <label for="yangxu-question2-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question2-4" name="yangxu-question2" type="radio" value="4" />
+                        <label for="yangxu-question2-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question2-5" name="yangxu-question2" type="radio" value="5" />
+                        <label for="yangxu-question2-5">总是（非常）</label>
+                      </div>
+                      <h4>（3）您感到怕冷、衣服比别人穿得多吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yangxu-question3-1" name="yangxu-question3" type="radio" value="1" />
+                        <label for="yangxu-question3-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question3-2" name="yangxu-question3" type="radio" value="2" />
+                        <label for="yangxu-question3-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question3-3" name="yangxu-question3" type="radio" value="3" />
+                        <label for="yangxu-question3-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question3-4" name="yangxu-question3" type="radio" value="4" />
+                        <label for="yangxu-question3-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question3-5" name="yangxu-question3" type="radio" value="5" />
+                        <label for="yangxu-question3-5">总是（非常）</label>
+                      </div>
+                      <h4>（4）您比一般人耐受不了寒冷(冬天的寒冷，夏天的冷空调、电扇等)吗？</h4>
+                      <div class="inputGroup">
+                        <input id="yangxu-question4-1" name="yangxu-question4" type="radio" value="1" />
+                        <label for="yangxu-question4-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question4-2" name="yangxu-question4" type="radio" value="2" />
+                        <label for="yangxu-question4-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question4-3" name="yangxu-question4" type="radio" value="3" />
+                        <label for="yangxu-question4-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question4-4" name="yangxu-question4" type="radio" value="4" />
+                        <label for="yangxu-question4-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question4-5" name="yangxu-question4" type="radio" value="5" />
+                        <label for="yangxu-question4-5">总是（非常）</label>
+                      </div>
+                      <h4>（5）您比别人容易患感冒吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yangxu-question5-1" name="yangxu-question5" type="radio" value="1" />
+                        <label for="yangxu-question5-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question5-2" name="yangxu-question5" type="radio" value="2" />
+                        <label for="yangxu-question5-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question5-3" name="yangxu-question5" type="radio" value="3" />
+                        <label for="yangxu-question5-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question5-4" name="yangxu-question5" type="radio" value="4" />
+                        <label for="yangxu-question5-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question5-5" name="yangxu-question5" type="radio" value="5" />
+                        <label for="yangxu-question5-5">总是（非常）</label>
+                      </div>
+                      <h4>（6）您吃(喝)凉的东西会感到不舒服或者怕吃(喝)凉的东西吗？</h4>
+                      <div class="inputGroup">
+                        <input id="yangxu-question6-1" name="yangxu-question6" type="radio" value="1" />
+                        <label for="yangxu-question6-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question6-2" name="yangxu-question6" type="radio" value="2" />
+                        <label for="yangxu-question6-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question6-3" name="yangxu-question6" type="radio" value="3" />
+                        <label for="yangxu-question6-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question6-4" name="yangxu-question6" type="radio" value="4" />
+                        <label for="yangxu-question6-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question6-5" name="yangxu-question6" type="radio" value="5" />
+                        <label for="yangxu-question6-5">总是（非常）</label>
+                      </div>
+                      <h4>（7）您受凉或吃(喝)凉的东西后，容易腹泻(拉肚子)吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yangxu-question7-1" name="yangxu-question7" type="radio" value="1" />
+                        <label for="yangxu-question7-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question7-2" name="yangxu-question7" type="radio" value="2" />
+                        <label for="yangxu-question7-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question7-3" name="yangxu-question7" type="radio" value="3" />
+                        <label for="yangxu-question7-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question7-4" name="yangxu-question7" type="radio" value="4" />
+                        <label for="yangxu-question7-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yangxu-question7-5" name="yangxu-question7" type="radio" value="5" />
+                        <label for="yangxu-question7-5">总是（非常）</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="img_cnt"></span> / <span class="img_amt"></span>
+                    <button class="btn btn-default btn-lg nxt" id="yangxu-btn" type="button">Next <span
+                        class="icon-next"></span></button>
+                  </li>
+                  <li class="form-group animated hide" data-color="#00AF66" data-percentage="40%">
+                    <h2>阴虚质（D型）</h2>
+                    <p>
+                      请根据近一年的体验和感觉，回答以下问题
+                    </p>
+                    <div>
+                      <h4>（1）您感到手脚心发热吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yinxu-question1-1" name="yinxu-question1" type="radio" value="1" />
+                        <label for="yinxu-question1-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question1-2" name="yinxu-question1" type="radio" value="2" />
+                        <label for="yinxu-question1-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question1-3" name="yinxu-question1" type="radio" value="3" />
+                        <label for="yinxu-question1-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question1-4" name="yinxu-question1" type="radio" value="4" />
+                        <label for="yinxu-question1-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question1-5" name="yinxu-question1" type="radio" value="5" />
+                        <label for="yinxu-question1-5">总是（非常）</label>
+                      </div>
+                      <h4>（2）您感觉身体、脸上发热吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yinxu-question2-1" name="yinxu-question2" type="radio" value="1" />
+                        <label for="yinxu-question2-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question2-2" name="yinxu-question2" type="radio" value="2" />
+                        <label for="yinxu-question2-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question2-3" name="yinxu-question2" type="radio" value="3" />
+                        <label for="yinxu-question2-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question2-4" name="yinxu-question2" type="radio" value="4" />
+                        <label for="yinxu-question2-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question2-5" name="yinxu-question2" type="radio" value="5" />
+                        <label for="yinxu-question2-5">总是（非常）</label>
+                      </div>
+                      <h4>（3）您皮肤或口唇干吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yinxu-question3-1" name="yinxu-question3" type="radio" value="1" />
+                        <label for="yinxu-question3-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question3-2" name="yinxu-question3" type="radio" value="2" />
+                        <label for="yinxu-question3-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question3-3" name="yinxu-question3" type="radio" value="3" />
+                        <label for="yinxu-question3-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question3-4" name="yinxu-question3" type="radio" value="4" />
+                        <label for="yinxu-question3-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question3-5" name="yinxu-question3" type="radio" value="5" />
+                        <label for="yinxu-question3-5">总是（非常）</label>
+                      </div>
+                      <h4>（4）您口唇的颜色比一般人红吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yinxu-question4-1" name="yinxu-question4" type="radio" value="1" />
+                        <label for="yinxu-question4-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question4-2" name="yinxu-question4" type="radio" value="2" />
+                        <label for="yinxu-question4-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question4-3" name="yinxu-question4" type="radio" value="3" />
+                        <label for="yinxu-question4-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question4-4" name="yinxu-question4" type="radio" value="4" />
+                        <label for="yinxu-question4-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question4-5" name="yinxu-question4" type="radio" value="5" />
+                        <label for="yinxu-question4-5">总是（非常）</label>
+                      </div>
+                      <h4>（5）您容易便秘或大便干燥吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yinxu-question5-1" name="yinxu-question5" type="radio" value="1" />
+                        <label for="yinxu-question5-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question5-2" name="yinxu-question5" type="radio" value="2" />
+                        <label for="yinxu-question5-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question5-3" name="yinxu-question5" type="radio" value="3" />
+                        <label for="yinxu-question5-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question5-4" name="yinxu-question5" type="radio" value="4" />
+                        <label for="yinxu-question5-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question5-5" name="yinxu-question5" type="radio" value="5" />
+                        <label for="yinxu-question5-5">总是（非常）</label>
+                      </div>
+                      <h4>（6）您面部两颧潮红或偏红吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yinxu-question6-1" name="yinxu-question6" type="radio" value="1" />
+                        <label for="yinxu-question6-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question6-2" name="yinxu-question6" type="radio" value="2" />
+                        <label for="yinxu-question6-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question6-3" name="yinxu-question6" type="radio" value="3" />
+                        <label for="yinxu-question6-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question6-4" name="yinxu-question6" type="radio" value="4" />
+                        <label for="yinxu-question6-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question6-5" name="yinxu-question6" type="radio" value="5" />
+                        <label for="yinxu-question6-5">总是（非常）</label>
+                      </div>
+                      <h4>（7）您感到眼睛干涩吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yinxu-question7-1" name="yinxu-question7" type="radio" value="1" />
+                        <label for="yinxu-question7-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question7-2" name="yinxu-question7" type="radio" value="2" />
+                        <label for="yinxu-question7-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question7-3" name="yinxu-question7" type="radio" value="3" />
+                        <label for="yinxu-question7-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question7-4" name="yinxu-question7" type="radio" value="4" />
+                        <label for="yinxu-question7-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question7-5" name="yinxu-question7" type="radio" value="5" />
+                        <label for="yinxu-question7-5">总是（非常）</label>
+                      </div>
+                      <h4>（8）您感到口干咽燥、总想喝水吗?</h4>
+                      <div class="inputGroup">
+                        <input id="yinxu-question8-1" name="yinxu-question8" type="radio" value="1" />
+                        <label for="yinxu-question8-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question8-2" name="yinxu-question8" type="radio" value="2" />
+                        <label for="yinxu-question8-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question8-3" name="yinxu-question8" type="radio" value="3" />
+                        <label for="yinxu-question8-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question8-4" name="yinxu-question8" type="radio" value="4" />
+                        <label for="yinxu-question8-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="yinxu-question8-5" name="yinxu-question8" type="radio" value="5" />
+                        <label for="yinxu-question8-5">总是（非常）</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="img_cnt"></span> / <span class="img_amt"></span>
+                    <button class="btn btn-default btn-lg nxt" id="yinxu-btn" type="button">Next <span
+                        class="icon-next"></span></button>
+                  </li>
+                  <li class="form-group animated hide" data-color="#00AF66" data-percentage="50%">
+                    <h2>痰虚质（E型）</h2>
+                    <p>
+                      请根据近一年的体验和感觉，回答以下问题
+                    </p>
+                    <div>
+                      <h4>（1）您感到胸闷或腹部胀满吗?</h4>
+                      <div class="inputGroup">
+                        <input id="tanxu-question1-1" name="tanxu-question1" type="radio" value="1" />
+                        <label for="tanxu-question1-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question1-2" name="tanxu-question1" type="radio" value="2" />
+                        <label for="tanxu-question1-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question1-3" name="tanxu-question1" type="radio" value="3" />
+                        <label for="tanxu-question1-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question1-4" name="tanxu-question1" type="radio" value="4" />
+                        <label for="tanxu-question1-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question1-5" name="tanxu-question1" type="radio" value="5" />
+                        <label for="tanxu-question1-5">总是（非常）</label>
+                      </div>
+                      <h4>（2）您感到身体沉重不轻松或不爽快吗?</h4>
+                      <div class="inputGroup">
+                        <input id="tanxu-question2-1" name="tanxu-question2" type="radio" value="1" />
+                        <label for="tanxu-question2-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question2-2" name="tanxu-question2" type="radio" value="2" />
+                        <label for="tanxu-question2-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question2-3" name="tanxu-question2" type="radio" value="3" />
+                        <label for="tanxu-question2-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question2-4" name="tanxu-question2" type="radio" value="4" />
+                        <label for="tanxu-question2-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question2-5" name="tanxu-question2" type="radio" value="5" />
+                        <label for="tanxu-question2-5">总是（非常）</label>
+                      </div>
+                      <h4>（3）您腹部肥满松软吗?</h4>
+                      <div class="inputGroup">
+                        <input id="tanxu-question3-1" name="tanxu-question3" type="radio" value="1" />
+                        <label for="tanxu-question3-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question3-2" name="tanxu-question3" type="radio" value="2" />
+                        <label for="tanxu-question3-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question3-3" name="tanxu-question3" type="radio" value="3" />
+                        <label for="tanxu-question3-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question3-4" name="tanxu-question3" type="radio" value="4" />
+                        <label for="tanxu-question3-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question3-5" name="tanxu-question3" type="radio" value="5" />
+                        <label for="tanxu-question3-5">总是（非常）</label>
+                      </div>
+                      <h4>（4）您有额部油脂分泌多的现象吗?</h4>
+                      <div class="inputGroup">
+                        <input id="tanxu-question4-1" name="tanxu-question4" type="radio" value="1" />
+                        <label for="tanxu-question4-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question4-2" name="tanxu-question4" type="radio" value="2" />
+                        <label for="tanxu-question4-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question4-3" name="tanxu-question4" type="radio" value="3" />
+                        <label for="tanxu-question4-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question4-4" name="tanxu-question4" type="radio" value="4" />
+                        <label for="tanxu-question4-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question4-5" name="tanxu-question4" type="radio" value="5" />
+                        <label for="tanxu-question4-5">总是（非常）</label>
+                      </div>
+                      <h4>（5）您上眼睑比别人肿（上眼睑有轻微隆起的现象）吗?</h4>
+                      <div class="inputGroup">
+                        <input id="tanxu-question5-1" name="tanxu-question5" type="radio" value="1" />
+                        <label for="tanxu-question5-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question5-2" name="tanxu-question5" type="radio" value="2" />
+                        <label for="tanxu-question5-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question5-3" name="tanxu-question5" type="radio" value="3" />
+                        <label for="tanxu-question5-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question5-4" name="tanxu-question5" type="radio" value="4" />
+                        <label for="tanxu-question5-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question5-5" name="tanxu-question5" type="radio" value="5" />
+                        <label for="tanxu-question5-5">总是（非常）</label>
+                      </div>
+                      <h4>（6）您嘴里有黏黏的感觉吗?</h4>
+                      <div class="inputGroup">
+                        <input id="tanxu-question6-1" name="tanxu-question6" type="radio" value="1" />
+                        <label for="tanxu-question6-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question6-2" name="tanxu-question6" type="radio" value="2" />
+                        <label for="tanxu-question6-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question6-3" name="tanxu-question6" type="radio" value="3" />
+                        <label for="tanxu-question6-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question6-4" name="tanxu-question6" type="radio" value="4" />
+                        <label for="tanxu-question6-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question6-5" name="tanxu-question6" type="radio" value="5" />
+                        <label for="tanxu-question6-5">总是（非常）</label>
+                      </div>
+                      <h4>（7）您平时痰多，特别是咽喉部总感到有痰堵着吗?</h4>
+                      <div class="inputGroup">
+                        <input id="tanxu-question7-1" name="tanxu-question7" type="radio" value="1" />
+                        <label for="tanxu-question7-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question7-2" name="tanxu-question7" type="radio" value="2" />
+                        <label for="tanxu-question7-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question7-3" name="tanxu-question7" type="radio" value="3" />
+                        <label for="tanxu-question7-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question7-4" name="tanxu-question7" type="radio" value="4" />
+                        <label for="tanxu-question7-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question7-5" name="tanxu-question7" type="radio" value="5" />
+                        <label for="tanxu-question7-5">总是（非常）</label>
+                      </div>
+                      <h4>（8）您舌苔厚腻或有舌苔厚厚的感觉吗?</h4>
+                      <div class="inputGroup">
+                        <input id="tanxu-question8-1" name="tanxu-question8" type="radio" value="1" />
+                        <label for="tanxu-question8-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question8-2" name="tanxu-question8" type="radio" value="2" />
+                        <label for="tanxu-question8-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question8-3" name="tanxu-question8" type="radio" value="3" />
+                        <label for="tanxu-question8-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question8-4" name="tanxu-question8" type="radio" value="4" />
+                        <label for="tanxu-question8-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="tanxu-question8-5" name="tanxu-question8" type="radio" value="5" />
+                        <label for="tanxu-question8-5">总是（非常）</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="img_cnt"></span> / <span class="img_amt"></span>
+                    <button class="btn btn-default btn-lg nxt" id="tanxu-btn" type="button">Next <span
+                        class="icon-next"></span></button>
+                  </li>
+                  <li class="form-group animated hide" data-color="#00AF66" data-percentage="60%">
+                    <h2>湿热质（F型）</h2>
+                    <p>
+                      请根据近一年的体验和感觉，回答以下问题
+                    </p>
+                    <div>
+                      <h4>（1）您面部或鼻部有油腻感或者油亮发光吗?</h4>
+                      <div class="inputGroup">
+                        <input id="shire-question1-1" name="shire-question1" type="radio" value="1" />
+                        <label for="shire-question1-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question1-2" name="shire-question1" type="radio" value="2" />
+                        <label for="shire-question1-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question1-3" name="shire-question1" type="radio" value="3" />
+                        <label for="shire-question1-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question1-4" name="shire-question1" type="radio" value="4" />
+                        <label for="shire-question1-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question1-5" name="shire-question1" type="radio" value="5" />
+                        <label for="shire-question1-5">总是（非常）</label>
+                      </div>
+                      <h4>（2）您易生痤疮或疮疖吗?</h4>
+                      <div class="inputGroup">
+                        <input id="shire-question2-1" name="shire-question2" type="radio" value="1" />
+                        <label for="shire-question2-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question2-2" name="shire-question2" type="radio" value="2" />
+                        <label for="shire-question2-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question2-3" name="shire-question2" type="radio" value="3" />
+                        <label for="shire-question2-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question2-4" name="shire-question2" type="radio" value="4" />
+                        <label for="shire-question2-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question2-5" name="shire-question2" type="radio" value="5" />
+                        <label for="shire-question2-5">总是（非常）</label>
+                      </div>
+                      <h4>（3）您感到口苦或嘴里有异味吗?</h4>
+                      <div class="inputGroup">
+                        <input id="shire-question3-1" name="shire-question3" type="radio" value="1" />
+                        <label for="shire-question3-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question3-2" name="shire-question3" type="radio" value="2" />
+                        <label for="shire-question3-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question3-3" name="shire-question3" type="radio" value="3" />
+                        <label for="shire-question3-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question3-4" name="shire-question3" type="radio" value="4" />
+                        <label for="shire-question3-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question3-5" name="shire-question3" type="radio" value="5" />
+                        <label for="shire-question3-5">总是（非常）</label>
+                      </div>
+                      <h4>（4）您大便黏滞不爽、有解不尽的感觉吗?</h4>
+                      <div class="inputGroup">
+                        <input id="shire-question4-1" name="shire-question4" type="radio" value="1" />
+                        <label for="shire-question4-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question4-2" name="shire-question4" type="radio" value="2" />
+                        <label for="shire-question4-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question4-3" name="shire-question4" type="radio" value="3" />
+                        <label for="shire-question4-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question4-4" name="shire-question4" type="radio" value="4" />
+                        <label for="shire-question4-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question4-5" name="shire-question4" type="radio" value="5" />
+                        <label for="shire-question4-5">总是（非常）</label>
+                      </div>
+                      <h4>（5）您小便时尿道有发热感、尿色浓(深)吗?</h4>
+                      <div class="inputGroup">
+                        <input id="shire-question5-1" name="shire-question5" type="radio" value="1" />
+                        <label for="shire-question5-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question5-2" name="shire-question5" type="radio" value="2" />
+                        <label for="shire-question5-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question5-3" name="shire-question5" type="radio" value="3" />
+                        <label for="shire-question5-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question5-4" name="shire-question5" type="radio" value="4" />
+                        <label for="shire-question5-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question5-5" name="shire-question5" type="radio" value="5" />
+                        <label for="shire-question5-5">总是（非常）</label>
+                      </div>
+                      <h4>（6）您带下色黄(白带颜色发黄)吗?（限女性回答）</h4>
+                      <div class="inputGroup">
+                        <input id="shire-question6-1" name="shire-question6" type="radio" value="1" />
+                        <label for="shire-question6-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question6-2" name="shire-question6" type="radio" value="2" />
+                        <label for="shire-question6-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question6-3" name="shire-question6" type="radio" value="3" />
+                        <label for="shire-question6-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question6-4" name="shire-question6" type="radio" value="4" />
+                        <label for="shire-question6-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question6-5" name="shire-question6" type="radio" value="5" />
+                        <label for="shire-question6-5">总是（非常）</label>
+                      </div>
+                      <h4>（7）您的阴囊部位潮湿吗?（限男性回答）</h4>
+                      <div class="inputGroup">
+                        <input id="shire-question7-1" name="shire-question7" type="radio" value="1" />
+                        <label for="shire-question7-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question7-2" name="shire-question7" type="radio" value="2" />
+                        <label for="shire-question7-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question7-3" name="shire-question7" type="radio" value="3" />
+                        <label for="shire-question7-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question7-4" name="shire-question7" type="radio" value="4" />
+                        <label for="shire-question7-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="shire-question7-5" name="shire-question7" type="radio" value="5" />
+                        <label for="shire-question7-5">总是（非常）</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="img_cnt"></span> / <span class="img_amt"></span>
+                    <button class="btn btn-default btn-lg nxt" id="shire-btn" type="button">Next <span
+                        class="icon-next"></span></button>
+                  </li>
+                  <li class="form-group animated hide" data-color="#00AF66" data-percentage="70%">
+                    <h2>血瘀质（G型）</h2>
+                    <p>
+                      请根据近一年的体验和感觉，回答以下问题
+                    </p>
+                    <div>
+                      <h4>（1）您的皮肤在不知不觉中会出现青紫瘀斑（皮下出血）吗?</h4>
+                      <div class="inputGroup">
+                        <input id="xueyu-question1-1" name="xueyu-question1" type="radio" value="1" />
+                        <label for="xueyu-question1-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question1-2" name="xueyu-question1" type="radio" value="2" />
+                        <label for="xueyu-question1-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question1-3" name="xueyu-question1" type="radio" value="3" />
+                        <label for="xueyu-question1-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question1-4" name="xueyu-question1" type="radio" value="4" />
+                        <label for="xueyu-question1-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question1-5" name="xueyu-question1" type="radio" value="5" />
+                        <label for="xueyu-question1-5">总是（非常）</label>
+                      </div>
+                      <h4>（2）您两颧部有细微红丝吗?</h4>
+                      <div class="inputGroup">
+                        <input id="xueyu-question2-1" name="xueyu-question2" type="radio" value="1" />
+                        <label for="xueyu-question2-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question2-2" name="xueyu-question2" type="radio" value="2" />
+                        <label for="xueyu-question2-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question2-3" name="xueyu-question2" type="radio" value="3" />
+                        <label for="xueyu-question2-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question2-4" name="xueyu-question2" type="radio" value="4" />
+                        <label for="xueyu-question2-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question2-5" name="xueyu-question2" type="radio" value="5" />
+                        <label for="xueyu-question2-5">总是（非常）</label>
+                      </div>
+                      <h4>（3）您身体上有哪里疼痛吗?</h4>
+                      <div class="inputGroup">
+                        <input id="xueyu-question3-1" name="xueyu-question3" type="radio" value="1" />
+                        <label for="xueyu-question3-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question3-2" name="xueyu-question3" type="radio" value="2" />
+                        <label for="xueyu-question3-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question3-3" name="xueyu-question3" type="radio" value="3" />
+                        <label for="xueyu-question3-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question3-4" name="xueyu-question3" type="radio" value="4" />
+                        <label for="xueyu-question3-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question3-5" name="xueyu-question3" type="radio" value="5" />
+                        <label for="xueyu-question3-5">总是（非常）</label>
+                      </div>
+                      <h4>（4）您面色晦黯、或容易出现褐斑吗?</h4>
+                      <div class="inputGroup">
+                        <input id="xueyu-question4-1" name="xueyu-question4" type="radio" value="1" />
+                        <label for="xueyu-question4-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question4-2" name="xueyu-question4" type="radio" value="2" />
+                        <label for="xueyu-question4-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question4-3" name="xueyu-question4" type="radio" value="3" />
+                        <label for="xueyu-question4-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question4-4" name="xueyu-question4" type="radio" value="4" />
+                        <label for="xueyu-question4-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question4-5" name="xueyu-question4" type="radio" value="5" />
+                        <label for="xueyu-question4-5">总是（非常）</label>
+                      </div>
+                      <h4>（5）您容易有黑眼圈吗?</h4>
+                      <div class="inputGroup">
+                        <input id="xueyu-question5-1" name="xueyu-question5" type="radio" value="1" />
+                        <label for="xueyu-question5-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question5-2" name="xueyu-question5" type="radio" value="2" />
+                        <label for="xueyu-question5-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question5-3" name="xueyu-question5" type="radio" value="3" />
+                        <label for="xueyu-question5-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question5-4" name="xueyu-question5" type="radio" value="4" />
+                        <label for="xueyu-question5-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question5-5" name="xueyu-question5" type="radio" value="5" />
+                        <label for="xueyu-question5-5">总是（非常）</label>
+                      </div>
+                      <h4>（6）您容易忘事（健忘）吗?</h4>
+                      <div class="inputGroup">
+                        <input id="xueyu-question6-1" name="xueyu-question6" type="radio" value="1" />
+                        <label for="xueyu-question6-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question6-2" name="xueyu-question6" type="radio" value="2" />
+                        <label for="xueyu-question6-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question6-3" name="xueyu-question6" type="radio" value="3" />
+                        <label for="xueyu-question6-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question6-4" name="xueyu-question6" type="radio" value="4" />
+                        <label for="xueyu-question6-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question6-5" name="xueyu-question6" type="radio" value="5" />
+                        <label for="xueyu-question6-5">总是（非常）</label>
+                      </div>
+                      <h4>（7）您口唇颜色偏黯吗?</h4>
+                      <div class="inputGroup">
+                        <input id="xueyu-question7-1" name="xueyu-question7" type="radio" value="1" />
+                        <label for="xueyu-question7-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question7-2" name="xueyu-question7" type="radio" value="2" />
+                        <label for="xueyu-question7-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question7-3" name="xueyu-question7" type="radio" value="3" />
+                        <label for="xueyu-question7-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question7-4" name="xueyu-question7" type="radio" value="4" />
+                        <label for="xueyu-question7-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="xueyu-question7-5" name="xueyu-question7" type="radio" value="5" />
+                        <label for="xueyu-question7-5">总是（非常）</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="img_cnt"></span> / <span class="img_amt"></span>
+                    <button class="btn btn-default btn-lg nxt" id="xueyu-btn" type="button">Next <span
+                        class="icon-next"></span></button>
+                  </li>
+                  <li class="form-group animated hide" data-color="#00AF66" data-percentage="80%">
+                    <h2>气郁质（H型）</h2>
+                    <p>
+                      请根据近一年的体验和感觉，回答以下问题
+                    </p>
+                    <div>
+                      <h4>（1）您感到闷闷不乐、情绪低沉吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qiyu-question1-1" name="qiyu-question1" type="radio" value="1" />
+                        <label for="qiyu-question1-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question1-2" name="qiyu-question1" type="radio" value="2" />
+                        <label for="qiyu-question1-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question1-3" name="qiyu-question1" type="radio" value="3" />
+                        <label for="qiyu-question1-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question1-4" name="qiyu-question1" type="radio" value="4" />
+                        <label for="qiyu-question1-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question1-5" name="qiyu-question1" type="radio" value="5" />
+                        <label for="qiyu-question1-5">总是（非常）</label>
+                      </div>
+                      <h4>（2）您容易精神紧张、焦虑不安吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qiyu-question2-1" name="qiyu-question2" type="radio" value="1" />
+                        <label for="qiyu-question2-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question2-2" name="qiyu-question2" type="radio" value="2" />
+                        <label for="qiyu-question2-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question2-3" name="qiyu-question2" type="radio" value="3" />
+                        <label for="qiyu-question2-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question2-4" name="qiyu-question2" type="radio" value="4" />
+                        <label for="qiyu-question2-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question2-5" name="qiyu-question2" type="radio" value="5" />
+                        <label for="qiyu-question2-5">总是（非常）</label>
+                      </div>
+                      <h4>（3）您多愁善感、感情脆弱吗？
+                      </h4>
+                      <div class="inputGroup">
+                        <input id="qiyu-question3-1" name="qiyu-question3" type="radio" value="1" />
+                        <label for="qiyu-question3-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question3-2" name="qiyu-question3" type="radio" value="2" />
+                        <label for="qiyu-question3-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question3-3" name="qiyu-question3" type="radio" value="3" />
+                        <label for="qiyu-question3-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question3-4" name="qiyu-question3" type="radio" value="4" />
+                        <label for="qiyu-question3-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question3-5" name="qiyu-question3" type="radio" value="5" />
+                        <label for="qiyu-question3-5">总是（非常）</label>
+                      </div>
+                      <h4>（4）您容易感到害怕或受到惊吓吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qiyu-question4-1" name="qiyu-question4" type="radio" value="1" />
+                        <label for="qiyu-question4-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question4-2" name="qiyu-question4" type="radio" value="2" />
+                        <label for="qiyu-question4-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question4-3" name="qiyu-question4" type="radio" value="3" />
+                        <label for="qiyu-question4-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question4-4" name="qiyu-question4" type="radio" value="4" />
+                        <label for="qiyu-question4-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question4-5" name="qiyu-question4" type="radio" value="5" />
+                        <label for="qiyu-question4-5">总是（非常）</label>
+                      </div>
+                      <h4>（5）您胁肋部或乳房胀痛吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qiyu-question5-1" name="qiyu-question5" type="radio" value="1" />
+                        <label for="qiyu-question5-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question5-2" name="qiyu-question5" type="radio" value="2" />
+                        <label for="qiyu-question5-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question5-3" name="qiyu-question5" type="radio" value="3" />
+                        <label for="qiyu-question5-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question5-4" name="qiyu-question5" type="radio" value="4" />
+                        <label for="qiyu-question5-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question5-5" name="qiyu-question5" type="radio" value="5" />
+                        <label for="qiyu-question5-5">总是（非常）</label>
+                      </div>
+                      <h4>（6）您无缘无故叹气吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qiyu-question6-1" name="qiyu-question6" type="radio" value="1" />
+                        <label for="qiyu-question6-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question6-2" name="qiyu-question6" type="radio" value="2" />
+                        <label for="qiyu-question6-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question6-3" name="qiyu-question6" type="radio" value="3" />
+                        <label for="qiyu-question6-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question6-4" name="qiyu-question6" type="radio" value="4" />
+                        <label for="qiyu-question6-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question6-5" name="qiyu-question6" type="radio" value="5" />
+                        <label for="qiyu-question6-5">总是（非常）</label>
+                      </div>
+                      <h4>（7）您咽喉部有异物感，且吐之不出、咽之不下吗?</h4>
+                      <div class="inputGroup">
+                        <input id="qiyu-question7-1" name="qiyu-question7" type="radio" value="1" />
+                        <label for="qiyu-question7-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question7-2" name="qiyu-question7" type="radio" value="2" />
+                        <label for="qiyu-question7-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question7-3" name="qiyu-question7" type="radio" value="3" />
+                        <label for="qiyu-question7-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question7-4" name="qiyu-question7" type="radio" value="4" />
+                        <label for="qiyu-question7-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="qiyu-question7-5" name="qiyu-question7" type="radio" value="5" />
+                        <label for="qiyu-question7-5">总是（非常）</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="img_cnt"></span> / <span class="img_amt"></span>
+                    <button class="btn btn-default btn-lg nxt" id="qiyu-btn" type="button">Next <span
+                        class="icon-next"></span></button>
+                  </li>
+                  <li class="form-group animated hide" data-color="#00AF66" data-percentage="90%">
+                    <h2>特禀质（I型）</h2>
+                    <p>
+                      请根据近一年的体验和感觉，回答以下问题
+                    </p>
+                    <div>
+                      <h4>（1）您没有感冒时也会打喷嚏吗?</h4>
+                      <div class="inputGroup">
+                        <input id="teling-question1-1" name="teling-question1" type="radio" value="1" />
+                        <label for="teling-question1-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question1-2" name="teling-question1" type="radio" value="2" />
+                        <label for="teling-question1-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question1-3" name="teling-question1" type="radio" value="3" />
+                        <label for="teling-question1-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question1-4" name="teling-question1" type="radio" value="4" />
+                        <label for="teling-question1-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question1-5" name="teling-question1" type="radio" value="5" />
+                        <label for="teling-question1-5">总是（非常）</label>
+                      </div>
+                      <h4>（2）您没有感冒时也会鼻塞、流鼻涕吗?</h4>
+                      <div class="inputGroup">
+                        <input id="teling-question2-1" name="teling-question2" type="radio" value="1" />
+                        <label for="teling-question2-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question2-2" name="teling-question2" type="radio" value="2" />
+                        <label for="teling-question2-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question2-3" name="teling-question2" type="radio" value="3" />
+                        <label for="teling-question2-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question2-4" name="teling-question2" type="radio" value="4" />
+                        <label for="teling-question2-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question2-5" name="teling-question2" type="radio" value="5" />
+                        <label for="teling-question2-5">总是（非常）</label>
+                      </div>
+                      <h4>（3）您有因季节变化、温度变化或异味等原因而咳喘的现象吗?</h4>
+                      <div class="inputGroup">
+                        <input id="teling-question3-1" name="teling-question3" type="radio" value="1" />
+                        <label for="teling-question3-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question3-2" name="teling-question3" type="radio" value="2" />
+                        <label for="teling-question3-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question3-3" name="teling-question3" type="radio" value="3" />
+                        <label for="teling-question3-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question3-4" name="teling-question3" type="radio" value="4" />
+                        <label for="teling-question3-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question3-5" name="teling-question3" type="radio" value="5" />
+                        <label for="teling-question3-5">总是（非常）</label>
+                      </div>
+                      <h4>（4）您容易过敏(对药物、食物、气味、花粉或在季节交替、气候变化时)吗?</h4>
+                      <div class="inputGroup">
+                        <input id="teling-question4-1" name="teling-question4" type="radio" value="1" />
+                        <label for="teling-question4-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question4-2" name="teling-question4" type="radio" value="2" />
+                        <label for="teling-question4-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question4-3" name="teling-question4" type="radio" value="3" />
+                        <label for="teling-question4-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question4-4" name="teling-question4" type="radio" value="4" />
+                        <label for="teling-question4-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question4-5" name="teling-question4" type="radio" value="5" />
+                        <label for="teling-question4-5">总是（非常）</label>
+                      </div>
+                      <h4>（5）您的皮肤容易起荨麻疹(风团、风疹块、风疙瘩)吗?</h4>
+                      <div class="inputGroup">
+                        <input id="teling-question5-1" name="teling-question5" type="radio" value="1" />
+                        <label for="teling-question5-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question5-2" name="teling-question5" type="radio" value="2" />
+                        <label for="teling-question5-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question5-3" name="teling-question5" type="radio" value="3" />
+                        <label for="teling-question5-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question5-4" name="teling-question5" type="radio" value="4" />
+                        <label for="teling-question5-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question5-5" name="teling-question5" type="radio" value="5" />
+                        <label for="teling-question5-5">总是（非常）</label>
+                      </div>
+                      <h4>（6）您的皮肤因过敏出现过紫癜(紫红色瘀点、瘀斑)吗?</h4>
+                      <div class="inputGroup">
+                        <input id="teling-question6-1" name="teling-question6" type="radio" value="1" />
+                        <label for="teling-question6-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question6-2" name="teling-question6" type="radio" value="2" />
+                        <label for="teling-question6-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question6-3" name="teling-question6" type="radio" value="3" />
+                        <label for="teling-question6-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question6-4" name="teling-question6" type="radio" value="4" />
+                        <label for="teling-question6-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question6-5" name="teling-question6" type="radio" value="5" />
+                        <label for="teling-question6-5">总是（非常）</label>
+                      </div>
+                      <h4>（7）您的皮肤一抓就红，并出现抓痕吗?</h4>
+                      <div class="inputGroup">
+                        <input id="teling-question7-1" name="teling-question7" type="radio" value="1" />
+                        <label for="teling-question7-1">没有（根本不）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question7-2" name="teling-question7" type="radio" value="2" />
+                        <label for="teling-question7-2">很少（有一点）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question7-3" name="teling-question7" type="radio" value="3" />
+                        <label for="teling-question7-3">有时（有些）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question7-4" name="teling-question7" type="radio" value="4" />
+                        <label for="teling-question7-4">经常（相当）</label>
+                      </div>
+                      <div class="inputGroup">
+                        <input id="teling-question7-5" name="teling-question7" type="radio" value="5" />
+                        <label for="teling-question7-5">总是（非常）</label>
+                      </div>
+                    </div>
+                    <br>
+                    <span class="img_cnt"></span> / <span class="img_amt"></span>
+                    <button class="btn btn-default btn-lg nxt" id="teling-btn" type="button">Next <span
+                        class="icon-next"></span></button>
+                  </li>
+                  <li class="form-group animated hide" data-color="#00AF66" data-percentage="100%">
+                      <h3>各表评分汇总</h3>
+                      <div class=" editable">
+                        <div class="break answer1" contenteditable="false"></div>
+                        <div class="break answer2" contenteditable="false"></div>
+                        <div class="break answer3" contenteditable="false"></div>
+                        <div class="break answer4" contenteditable="false"></div>
+                        <div class="break answer5" contenteditable="false"></div>
+                        <div class="break answer6" contenteditable="false"></div>
+                        <div class="break answer7" contenteditable="false"></div>
+                        <div class="break answer8" contenteditable="false"></div>
+                        <div class="break answer9" contenteditable="false"></div>
+                      </div>
+                    <button class="btn btn-default btn-lg" type="submit">submit</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
+
+          </div>
+          <!-- <div class="clearfix"></div> -->
+        </div>
+      </div>
+      <!-- <form>
+        <input hidden="" class="answer1" style="color:#444" disabled/>
+        <input hidden="" class="answer2" style="color:#444" disabled/>
+        <input hidden="" class="answer3" style="color:#444" disabled/>
+        <input hidden="" class="answer4" style="color:#444" disabled/>
+        <input hidden="" class="answer5" style="color:#444" disabled/>
+        <input type="submit" class="btn btn-default btn-lg hide submit" value="提交" />
+      </form> -->
+    </div>
+  </div>
+
+  <div class="animated thanks hide">
+    <h1 style="font-weight:100; font-size:48px; width: 80%; margin: 0 auto;">Thanks! We'll get back to you shortly!
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src='https://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+  <script>
+    $(function () {
+      //$('.submit').click(function () {
+      //  event.preventDefault();
+      //  var darken = '<div class="darken" style="display:none;"></div>';
+      //  $('body').prepend(darken);
+      //  $('.darken').delay().show(0).animate({ opacity: 0.8 }, 'fast');
+      //  $('.thanks').removeClass('hide').addClass('fadeInDownBig');
+      //});
+      var img_cnt = $('li.activate').index() + 1;
+      var img_amt = $('li.form-group').length;
+      $('.img_cnt').html(img_cnt);
+      $('.img_amt').html(img_amt);
+      var progress = $('.img_cnt').text() / $('.img_amt').text() * 100;
+      $('.progress-bar').css('width', progress + '%');
+      //$('.form-control').keyup(function () {
+      //		$('.nxt').removeClass('hide fadeOutDown').addClass('fadeInUp');
+      //});
+    });
+
+    $(function () {
+      var flag = true;
+      $('#pinghe-btn').click(function () {
+        flag = true;
+        var pinghe = 0;
+        var num = 8;
+        for (var i = 1; i <= num; i++) {
+          var temp = $('input:radio[name="pinghe-question' + i + '"]:checked').val();
+          if (temp==undefined) {
+            flag = false;
+            temp = 1;//如果有未选择项，得分置为1
+          }
+          pinghe = pinghe + Number(temp);
+        }
+        var pinghe_convertion = Math.round( (pinghe - num) / (num * 4) * 100);
+        $('.answer1').html(pinghe_convertion);
+      });
+
+      $('#qixu-btn').click(function () {
+        flag = true;
+        var qixu = 0;
+        var num = 8;
+        for (var i = 1; i <= num; i++) {
+          var temp = $('input:radio[name="qixu-question' + i + '"]:checked').val();
+        if (temp==undefined) {
+            flag = false;
+            temp = 1;//如果有未选择项，得分置为1
+          }
+          qixu = qixu + Number(temp);
+        }
+        var qixu_convertion = Math.round( (qixu - num) / (num * 4) * 100);
+        $('.answer2').html(qixu_convertion);
+      });
+
+      $('#yangxu-btn').click(function () {
+        flag = true;
+        var yangxu = 0;
+        var num = 7;
+        for (var i = 1; i <= num; i++) {
+          var temp = $('input:radio[name="yangxu-question' + i + '"]:checked').val();
+        if (temp==undefined) {
+            flag = false;
+            temp = 1;//如果有未选择项，得分置为1
+          }
+          yangxu = yangxu + Number(temp);
+        }
+        var yangxu_convertion = Math.round( (yangxu - num) / (num * 4) * 100);
+        $('.answer3').html(yangxu_convertion);
+      });
+
+      $('#yinxu-btn').click(function () {
+        var yinxu = 0;
+        var num = 8;
+        for (var i = 1; i <= num; i++) {
+          var temp = $('input:radio[name="yinxu-question' + i + '"]:checked').val();
+        if (temp==undefined) {
+            flag = false;
+            temp = 1;//如果有未选择项，得分置为1
+          }
+          yinxu = yinxu + Number(temp);
+        }
+        var yinxu_convertion = Math.round( (yinxu - num) / (num * 4) * 100);
+        $('.answer4').html(yinxu_convertion);
+      });
+
+      $('#tanxu-btn').click(function () {
+        flag = true;
+        var tanxu = 0;
+        var num = 8
+        for (var i = 1; i <= num; i++) {
+          var temp = $('input:radio[name="tanxu-question' + i + '"]:checked').val();
+        if (temp==undefined) {
+            flag = false;
+            temp = 1;//如果有未选择项，得分置为1
+          }
+          tanxu = tanxu + Number(temp);
+        }
+        var tanxu_convertion = Math.round( (tanxu - num) / (num * 4) * 100);
+        $('.answer5').html(tanxu_convertion);
+      });
+
+      $('#shire-btn').click(function () {
+        flag = true;
+        var shire = 0;
+        var num = 7;
+        for (var i = 1; i <= num; i++) {
+          var temp = $('input:radio[name="shire-question' + i + '"]:checked').val();
+        if (temp==undefined) {
+            flag = false;
+            temp = 1;//如果有未选择项，得分置为1
+          }
+          shire = shire + Number(temp);
+        }
+        var shire_convertion = Math.round( (shire - num) / (num * 4) * 100);
+        $('.answer6').html(shire_convertion);
+      });
+
+      $('#xueyu-btn').click(function () {
+        flag = true;
+        var xueyu = 0;
+        var num = 7;
+        for (var i = 1; i <= num; i++) {
+          var temp = $('input:radio[name="xueyu-question' + i + '"]:checked').val();
+        if (temp==undefined) {
+            flag = false;
+            temp = 1;//如果有未选择项，得分置为1
+          }
+          xueyu = xueyu + Number(temp);
+        }
+        var xueyu_convertion = Math.round( (xueyu - num) / (num * 4) * 100);
+        $('.answer7').html(xueyu_convertion);
+      });
+
+      $('#qiyu-btn').click(function () {
+        flag = true;
+        var qiyu = 0;
+        var num = 7;
+        for (var i = 1; i <= num; i++) {
+          var temp = $('input:radio[name="qiyu-question' + i + '"]:checked').val();
+        if (temp==undefined) {
+            flag = false;
+            temp = 1;//如果有未选择项，得分置为1
+          }
+          qiyu = qiyu + Number(temp);
+        }
+        var qiyu_convertion = Math.round( (qiyu - num) / (num * 4) * 100);
+        $('.answer8').html(qiyu_convertion);
+      });
+
+      $('#teling-btn').click(function () {
+        flag = true;
+        var teling = 0;
+        var num = 7;
+        for (var i = 1; i <= num; i++) {
+          var temp = $('input:radio[name="teling-question' + i + '"]:checked').val();
+        if (temp==undefined) {
+            flag = false;
+            temp = 1;//如果有未选择项，得分置为1
+          }
+          teling = teling + Number(temp);
+        }
+        var teling_convertion = Math.round( (teling - num) / (num * 4) * 100);
+        $('.answer9').html(teling_convertion);
+      });
+      //$('#q2').keyup(function () {
+      //		var nameValue = $(this).val();
+      //		$('.answer2').html(nameValue);
+      //});
+      $('.nxt').click(function () {
+        flag = true;//这里记得注释掉
+        if (flag && $('.progress-form li').hasClass('activate')) {
+          //$('p.alerted').removeClass('fadeInLeft').addClass('fadeOutUp');
+          var $activate = $('li.activate');
+          var $inactive = $('li.inactive');
+          $activate.removeClass('fadeInRightBig activate').addClass('fadeOutLeftBig');
+          $inactive.removeClass('hide inactive').addClass('activate fadeInRightBig').next().addClass('inactive');
+          var img_cnt = $('li.activate').index() + 1;
+          var img_amt = $('li.form-group').length;
+          $('.img_cnt').html(img_cnt);
+          $('.img_amt').html(img_amt);
+          var progress = $('.img_cnt').text() / $('.img_amt').text() * 100;
+          $('.progress-bar').css('width', progress + '%');
+          if ($('.img_cnt').html() == $('.img_amt').html()) {
+            $('.count, .nxt').hide();
+            //$('.submit').removeClass('hide');
+          }
+        } else {
+          alert("请填写完整信息");
+        }
+
+      });
+
+    });
+  </script>
+</body>
+
+</html>
