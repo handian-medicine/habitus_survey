@@ -140,7 +140,7 @@ function SurveyResult(question_list) {
   }
   if ( (question_list["pinghe-question"][1] >= 60) && (flag_30) ) {
     question_list["pinghe-question"][3] = 2;
-  } else if ( (question_list["pinghe-question"][1] <= 60) && (flag_40) ) {
+  } else if ( (question_list["pinghe-question"][1] >= 60) && (flag_40) ) {
     question_list["pinghe-question"][3] = 1;
   } else {
     question_list["pinghe-question"][3] = 0;
