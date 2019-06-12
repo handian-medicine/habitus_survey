@@ -61,8 +61,8 @@
                         </tbody>
                     </table>
                 </div>
-                <p><%= mydata %></p>
-                <div id="chart1" style="width: 1024px;height:400px;"></div>
+                <br>
+                <div id="chart1" style="width: 350px;height:200px;background:aliceblue"></div>
             </div>
         </div>
     </div>
@@ -71,14 +71,20 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src='https://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
     <script src="js/echarts.min.js"></script>
+    <script>
+        var data_yes = '<%= data_yes %>';
+        var data_almost_yes = '<%= data_almost_yes %>';
+        var temp1 = [9,8,7,6,5,4,3,2,1];
+        var temp2 = [1,2,3,4,5,6,7,8,9];
+    </script>
     <script type="text/javascript">
         var myChart = echarts.init(document.getElementById('chart1'));
 
         // 指定图表的配置项和数据
         var option = {
             title : {
-                text: '流调数据提交医院排名',
-                subtext: '排卵障碍性异常子宫出血',
+                text: '中医体质调查问卷',
+                //subtext: '排卵障碍性异常子宫出血',
                 x:'center'
             },
             tooltip : {
@@ -90,7 +96,7 @@
             legend: {
                 orient : 'vertical',
                 x : 'left',
-                data:['未审核','审核通过','审核不通过']
+                data:['是','基本是']
             },
             calculable : true,
             xAxis : [
@@ -99,15 +105,14 @@
                     //设置字体倾斜  
                     axisLabel: {
                         interval: 0,
-                        rotate: 45,
-                        //倾斜度 -90 至 90 默认为0  
+                        rotate: 45,//倾斜度 -90 至 90 默认为0  
                         margin: 2,
                         textStyle: {
                             //fontWeight: "bolder",
                             color: "#000000"
                         }
                     },
-                    data : ['广安门中医院','东直门中医院','北京中医院','河北中医院','杭州市中医院','云南中医药大学第一附属医院','广东省中医院']
+                    data : ['平和质','气虚质','阳虚质','阴虚质','痰虚质','湿热质','血瘀质','气郁质','特禀质']
                 }
             ],
             yAxis : [
@@ -117,24 +122,17 @@
             ],
             series : [
                 {
-                    name:'未审核',
+                    name:'是',
                     type:'bar',
                     stack:'hospital',
-                    data:[400, 390, 350, 346, 330, 325, 320]
+                    data:temp1 //[1, 2, 3, 4, 5, 6, 7, 8, 9]
                 },
                 {
-                    name:'审核通过',
+                    name:'基本是',
                     type:'bar',
+                    barWidth:20,
                     stack: 'hospital',
-                    data:[200, 200, 190, 186, 100, 98, 96]
-                },
-                {
-                    name:'审核不通过',
-                    type:'bar',
-                    stack: 'hospital',
-                    //设置柱的宽度，要是数据太少，柱子太宽不美观~
-                    barWidth:70,
-                    data:[56, 60, 50, 50, 60, 65, 30]
+                    data:temp2 //[2, 2, 1, 1, 1, 2, 2, 3, 3]
                 }
             ]
         };
