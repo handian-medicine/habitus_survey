@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <title>体质调查问卷</title>
-  <link rel='stylesheet prefetch' href='https://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel='stylesheet prefetch' href='css/bootstrap.min.css'>
   <link rel='stylesheet prefetch' href='css/animate.min.css'>
   <link rel="stylesheet" type="text/css" href="css/default.css">
   <link rel="stylesheet" href="../layui/css/layui.css">
@@ -60,7 +60,7 @@
                     </div>
                     <br>
                     <span class="img_cnt"></span> / <span class="img_amt"></span>
-                    <button class="btn btn-default btn-lg nxt" id="pinghe-btn" type="button"> Next <span
+                    <button class="btn btn-default btn-lg nxt" id="pinghe-btn" type="button"> 下一页 <span
                         class="icon-next"></span></button>
                   </li>
                   <li class="form-group animated hide inactive" data-color="#7C6992" data-percentage="20%">
@@ -93,7 +93,7 @@
                     </div>
                     <br>
                     <span class="img_cnt"></span> / <span class="img_amt"></span>
-                    <button class="btn btn-default btn-lg nxt" id="qixu-btn" type="button">Next <span
+                    <button class="btn btn-default btn-lg nxt" id="qixu-btn" type="button">下一页 <span
                         class="icon-next"></span></button>
                   </li>
                   <li class="form-group animated hide" data-color="#00AF66" data-percentage="30%">
@@ -126,7 +126,7 @@
                     </div>
                     <br>
                     <span class="img_cnt"></span> / <span class="img_amt"></span>
-                    <button class="btn btn-default btn-lg nxt" id="yangxu-btn" type="button">Next <span
+                    <button class="btn btn-default btn-lg nxt" id="yangxu-btn" type="button">下一页 <span
                         class="icon-next"></span></button>
                   </li>
                   <li class="form-group animated hide" data-color="#00AF66" data-percentage="40%">
@@ -159,7 +159,7 @@
                     </div>
                     <br>
                     <span class="img_cnt"></span> / <span class="img_amt"></span>
-                    <button class="btn btn-default btn-lg nxt" id="yinxu-btn" type="button">Next <span
+                    <button class="btn btn-default btn-lg nxt" id="yinxu-btn" type="button">下一页 <span
                         class="icon-next"></span></button>
                   </li>
                   <li class="form-group animated hide" data-color="#00AF66" data-percentage="50%">
@@ -192,7 +192,7 @@
                     </div>
                     <br>
                     <span class="img_cnt"></span> / <span class="img_amt"></span>
-                    <button class="btn btn-default btn-lg nxt" id="tanxu-btn" type="button">Next <span
+                    <button class="btn btn-default btn-lg nxt" id="tanxu-btn" type="button">下一页 <span
                         class="icon-next"></span></button>
                   </li>
                   <li class="form-group animated hide" data-color="#00AF66" data-percentage="60%">
@@ -225,7 +225,7 @@
                     </div>
                     <br>
                     <span class="img_cnt"></span> / <span class="img_amt"></span>
-                    <button class="btn btn-default btn-lg nxt" id="shire-btn" type="button">Next <span
+                    <button class="btn btn-default btn-lg nxt" id="shire-btn" type="button">下一页 <span
                         class="icon-next"></span></button>
                   </li>
                   <li class="form-group animated hide" data-color="#00AF66" data-percentage="70%">
@@ -258,7 +258,7 @@
                     </div>
                     <br>
                     <span class="img_cnt"></span> / <span class="img_amt"></span>
-                    <button class="btn btn-default btn-lg nxt" id="xueyu-btn" type="button">Next <span
+                    <button class="btn btn-default btn-lg nxt" id="xueyu-btn" type="button">下一页 <span
                         class="icon-next"></span></button>
                   </li>
                   <li class="form-group animated hide" data-color="#00AF66" data-percentage="80%">
@@ -291,7 +291,7 @@
                     </div>
                     <br>
                     <span class="img_cnt"></span> / <span class="img_amt"></span>
-                    <button class="btn btn-default btn-lg nxt" id="qiyu-btn" type="button">Next <span
+                    <button class="btn btn-default btn-lg nxt" id="qiyu-btn" type="button">下一页 <span
                         class="icon-next"></span></button>
                   </li>
                   <li class="form-group animated hide" data-color="#00AF66" data-percentage="90%">
@@ -324,7 +324,7 @@
                     </div>
                     <br>
                     <span class="img_cnt"></span> / <span class="img_amt"></span>
-                    <button class="btn btn-default btn-lg nxt" id="teling-btn" type="button">Next <span
+                    <button class="btn btn-default btn-lg nxt" id="teling-btn" type="button">下一页 <span
                         class="icon-next"></span></button>
                   </li>
                   <li class="form-group animated hide" data-color="#00AF66" data-percentage="100%">
@@ -526,7 +526,7 @@
       });
 
       $('.nxt').click(function () {
-        //flag = true;//这里记得注释掉
+        flag = true;//这里记得注释掉
         if (flag && $('.progress-form li').hasClass('activate')) {
           //$('p.alerted').removeClass('fadeInLeft').addClass('fadeOutUp');
           var $activate = $('li.activate');
