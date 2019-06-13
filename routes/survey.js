@@ -83,15 +83,6 @@ router.post('/', function(req, res, next) {
 
   var data_yes = [];
   var data_almost_yes = [];
-  // base.SurveyModel.countDocuments({"pinghe_question_result":1},function(err, count){data_almost_yes[0]=count;});
-  // base.SurveyModel.countDocuments({"qixu_question_result":1},function(err, count){data_almost_yes[1]=count;});
-  // base.SurveyModel.countDocuments({"yangxu_question_result":1},function(err, count){data_almost_yes[2]=count;});
-  // base.SurveyModel.countDocuments({"yinxu_question_result":1},function(err, count){data_almost_yes[3]=count;});
-  // base.SurveyModel.countDocuments({"tanxu_question_result":1},function(err, count){data_almost_yes[4]=count;});
-  // base.SurveyModel.countDocuments({"shire_question_result":1},function(err, count){data_almost_yes[5]=count;});
-  // base.SurveyModel.countDocuments({"xueyu_question_result":1},function(err, count){data_almost_yes[6]=count;});
-  // base.SurveyModel.countDocuments({"qiyu_question_result":1},function(err, count){data_almost_yes[7]=count;});
-  // base.SurveyModel.countDocuments({"teling_question_result":1},function(err, count){data_almost_yes[8]=count;});
   async function doIt() {
     await base.SurveyModel.countDocuments({"pinghe_question_result":2},function(err, count){data_yes[0]=count;});
     await base.SurveyModel.countDocuments({"qixu_question_result":2},function(err, count){data_yes[1]=count;});
@@ -106,7 +97,7 @@ router.post('/', function(req, res, next) {
         question_list:question_list,
         data_yes:data_yes,
         data_almost_yes:data_almost_yes});
-  });
+      });
   }//async
   doIt();
 });
