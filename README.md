@@ -8,7 +8,7 @@ DEBUG=habitus-survey:* npm run devstart ##自动重启服务区
 DEBUG=habitus-survey:* npm start
 ```
 
-##MongoDB
+## MongoDB
 
 MongoDB启动，命令行输入：
 

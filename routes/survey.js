@@ -11,7 +11,17 @@ router.get('/', function(req, res, next) {
 });
 router.post('/', function(req, res, next) {
   console.log("look here");
-  console.log("req.body", req.body);
+  console.log("传入的req.body", req.body);
+  //TODO把body里的数据转换成第一版的格式
+  for(var i in req.body) {
+    var temp = i.split("+");
+    if (temp.length == 2) {
+      req.body[temp[0]] = req.body[i];
+      req.body[temp[1]] = req.body[i];
+      delete req.body[i];
+    }
+  }
+  console.log("新的req.body",req.body);
   //key为问题类型,value是列表,其中列表
   //0第一个元素表示某类型问题  包含的问题数目
   //1第二个元素表示某类型问题  的得分
@@ -19,15 +29,15 @@ router.post('/', function(req, res, next) {
   //3第四个元素 表示体质判定结果, 0表示否, 1表示基本是(倾向是), 2表示是
   //4第五个元素 中文名称
   var question_list = {
-    "pinghe-question":[8,0,"pinghe_question",0,"平和质"],
-    "qixu-question":[8,0,"qixu_question",0,"气虚质"],
-    "yangxu-question":[7,0,"yangxu_question",0,"阳虚质"],
-    "yinxu-question":[8,0,"yinxu_question",0,"阴虚质"],
-    "tanxu-question":[8,0,"tanxu_question",0,"痰虚质"],
-    "shire-question":[7,0,"shire_question",0,"湿热质"],
-    "xueyu-question":[7,0,"xueyu_question",0,"血瘀质"],
-    "qiyu-question":[7,0,"qiyu_question",0,"气郁质"],
-    "teling-question":[7,0,"teling_question",0,"特禀质"]
+    "pinghe-question":[8, 0, "pinghe_question", 0, "平和质"],
+    "qixu-question":  [8, 0, "qixu_question"  , 0, "气虚质"],
+    "yangxu-question":[7, 0, "yangxu_question", 0, "阳虚质"],
+    "yinxu-question": [8, 0, "yinxu_question" , 0, "阴虚质"],
+    "tanxu-question": [8, 0, "tanxu_question" , 0, "痰虚质"],
+    "shire-question": [7, 0, "shire_question" , 0, "湿热质"],
+    "xueyu-question": [7, 0, "xueyu_question" , 0, "血瘀质"],
+    "qiyu-question":  [7, 0, "qiyu_question"  , 0, "气郁质"],
+    "teling-question":[7, 0, "teling_question", 0, "特禀质"]
     };
   var row = {};
   for (var question in question_list) {
@@ -81,8 +91,8 @@ router.post('/', function(req, res, next) {
   // });
   // 返回符合条件的数据数量
 
-  var data_yes = [];
-  var data_almost_yes = [];
+  var data_yes = [];//完全 是 九种体质 之一的
+  var data_almost_yes = [];//基本 是 九种体质 之一的
   async function doIt() {
     await base.SurveyModel.countDocuments({"pinghe_question_result":2},function(err, count){data_yes[0]=count;});
     await base.SurveyModel.countDocuments({"qixu_question_result":2},function(err, count){data_yes[1]=count;});
