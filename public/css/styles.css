@@ -44,7 +44,7 @@ body { position:relative; background-color: #3498db}
 	}
 
 .red { background-color:#e1523d}
-.table-class {display: table; width:100%; height:100%}
+.table-class {display: table;}
 .black {
 
 	  z-index:1111111; display: table-cell;
@@ -54,9 +54,6 @@ body { position:relative; background-color: #3498db}
 
 body {
   color: #fff;
-
-
-
 }
 .container-fluid {
     padding: 0px;
