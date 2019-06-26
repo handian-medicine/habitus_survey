@@ -15,6 +15,10 @@
         div.mydiv {
             background-color: rgb(79, 151, 213);
         }
+        div.mycenter {
+            width:100%;
+            text-align:center
+        }
     </style>
 </head>
 
@@ -88,16 +92,26 @@
                     </div>
                 </ul>
             </div>
+            <!-- <br> -->
+            <div class="mycenter">
+                <button class="layui-btn layui-btn-radius layui-btn-normal">
+                    <a style="color: aliceblue" href="result-info.html">
+                        所有体质详细信息请点击
+                    </a>
+                </button>
+            </div>
             <br>
-        <div style="width:50%;margin: 0 auto;">
-            <button class="layui-btn layui-btn-radius layui-btn-normal">
-                <a style="color: aliceblue" href="result-info.html">
-                    所有体质详细信息请点击
-                </a>
-            </button>
-        </div>
+            <div id="img" class="mycenter">
+                <img src="images/handianjituan.png" alt="hello" style="width:150px;height:150px;">
+            </div>
+            <div class="mycenter">
+                <p style="color: aliceblue">
+                    请关注汉典制药公众号获取更多信息
+                </p>
+            </div>
         <br>
     </div>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/vue.js"></script>
     <script src="layui/layui.js"></script>

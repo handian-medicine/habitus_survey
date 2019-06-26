@@ -19,8 +19,8 @@
     h1 {
       background-color: rgb(79, 151, 213);
       font-size: 150%;
-      color: rgb(250, 211, 211);
-      font-weight: 300;
+      color: rgb(248, 248, 248);
+      font-weight: bold;
       height: 60px;
       line-height: 60px;
       text-align: center;
@@ -82,6 +82,11 @@
       <div class="layui-col-sm12 layui-col-md12">
         <h1 class="text-center">中医体质调查问卷</H1>
       </div>
+      <div id="suggestion">
+          <p style="font-weight: bold;color:crimson">提交代表您已经接受以下声明:</p>
+          <p>本测试不作为诊断和治疗的依据，对于已经医生确诊的疾病，应按照医嘱积极治疗。所涉及的内容仅作为生活保健的咨询建议。如遇不适请及时就医。
+      </div>
+      <hr>
     </div>
 
     <div class="layui-row">
@@ -126,6 +131,7 @@
               <br>
             </ul>
         </div>
+
         <div id="test">
           <button v-if="submit_flag" 	class="layui-btn layui-btn-radius layui-btn-normal" type="submit" id="submitBtn">查看结果</button>
         </div>
